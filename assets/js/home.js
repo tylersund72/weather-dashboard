@@ -7,6 +7,9 @@ let weather = {
     )
       .then((response) => response.json())
       .then((data) => this.displayCurrentWeather(data));
+
+    saveSearch(city);
+    loadSearches();
   },
 
   displayCurrentWeather: function (data) {
@@ -138,7 +141,19 @@ let futureWeather = {
     this.getFutureWeather(document.querySelector(".search-bar").value);
   },
 };
+
+var saveSearch = function (city) {
+  searchHistory.push(city);
+  localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
+};
+
+var loadSearches = function () {
+  searchHistory = JSON.parse(localStorage.getItem("searchHistory"));
+};
+
 document.querySelector(".search button").addEventListener("click", function () {
   weather.search();
   futureWeather.search();
 });
+
+loadSearches();
