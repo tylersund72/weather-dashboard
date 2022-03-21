@@ -19,7 +19,7 @@
     </header>
 
     <main>
-      <div class="container">
+      <div class="container-fluid">
         <div class="search">
           <input type="text" class="search-bar" />
           <button></button>
@@ -41,33 +41,43 @@
       <!-- 5 days of weather -->
       <div>
         <div id="first-day">
-          <h2>Temperature:</h2>
-          <h2>Wind Speed:</h2>
-          <h2>Humidity:</h2>
+          <h2 id="day-1-date"></h2>
+          <h2 id="day-1-temp">Temperature:</h2>
+          <h2 id="day-1-wind">Wind Speed:</h2>
+          <h2 id="day-1-hum">Humidity:</h2>
         </div>
         <div id="second-day">
-          <h2>Temperature:</h2>
-          <h2>Wind Speed:</h2>
-          <h2>Humidity:</h2>
+          <h2 id="day-2-date"></h2>
+          <h2 id="day-2-temp">Temperature:</h2>
+          <h2 id="day-2-wind">Wind Speed:</h2>
+          <h2 id="day-2-hum">Humidity:</h2>
         </div>
         <div id="third-day">
-          <h2>Temperature:</h2>
-          <h2>Wind Speed:</h2>
-          <h2>Humidity:</h2>
+          <h2 id="day-3-date"></h2>
+          <h2 id="day-3-temp">Temperature:</h2>
+          <h2 id="day-3-wind">Wind Speed:</h2>
+          <h2 id="day-3-hum">Humidity:</h2>
         </div>
         <div id="fourth-day">
-          <h2>Temperature:</h2>
-          <h2>Wind Speed:</h2>
-          <h2>Humidity:</h2>
+          <h2 id="day-4-date"></h2>
+          <h2 id="day-4-temp">Temperature:</h2>
+          <h2 id="day-4-wind">Wind Speed:</h2>
+          <h2 id="day-4-hum">Humidity:</h2>
         </div>
         <div id="fifth-day">
-          <h2>Temperature:</h2>
-          <h2>Wind Speed:</h2>
-          <h2>Humidity:</h2>
+          <h2 id="day-5-date"></h2>
+          <h2 id="day-5-temp">Temperature:</h2>
+          <h2 id="day-5-wind">Wind Speed:</h2>
+          <h2 id="day-5-hum">Humidity:</h2>
         </div>
       </div>
     </main>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./assets/js/home.js"></script>
   </body>
 </html>
