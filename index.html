@@ -21,9 +21,14 @@
         <div class="row align-items-start">
           <div class="col-md-3">
             <form>
-              <div class="form-input" id="city-search">
+              <div id="city-search">
                 <label for="city">City Search</label>
-                <input type="text" placeholder="City" />
+                <input
+                  class="search-bar"
+                  id="form-input"
+                  type="text"
+                  placeholder="City"
+                />
                 <button type="submit" id="search-btn"></button>
               </div>
             </form>
@@ -32,41 +37,41 @@
       </div>
       <!-- display current weather -->
       <div class="col">
-        <div>
-            <h2>City You Searched</h2>
-            <h2>Temperature: </h2>
-            <h2>Wind Speed: </h2>
-            <h2>Humidity</h2>
-            <h2>UV Index: </h2>
+        <div class="weather">
+          <h2 class="city">City You Searched</h2>
+          <h2 class="temp">Temperature:</h2>
+          <h2 class="wind">Wind Speed:</h2>
+          <h2 class="humidity">Humidity</h2>
+          <h2 class="uv">UV Index:</h2>
         </div>
       </div>
 
       <!-- 5 days of weather -->
       <div>
-        <div id=first-day>
-            <h2>Temperature: </h2>
-            <h2>Wind Speed: </h2>
-            <h2>Humidity: </h2>
+        <div id="first-day">
+          <h2>Temperature:</h2>
+          <h2>Wind Speed:</h2>
+          <h2>Humidity:</h2>
         </div>
-        <div id=second-day>
-            <h2>Temperature: </h2>
-            <h2>Wind Speed: </h2>
-            <h2>Humidity: </h2>
+        <div id="second-day">
+          <h2>Temperature:</h2>
+          <h2>Wind Speed:</h2>
+          <h2>Humidity:</h2>
         </div>
-        <div id=third-day>
-            <h2>Temperature: </h2>
-            <h2>Wind Speed: </h2>
-            <h2>Humidity: </h2>
+        <div id="third-day">
+          <h2>Temperature:</h2>
+          <h2>Wind Speed:</h2>
+          <h2>Humidity:</h2>
         </div>
-        <div id=fourth-day>
-            <h2>Temperature: </h2>
-            <h2>Wind Speed: </h2>
-            <h2>Humidity: </h2>
+        <div id="fourth-day">
+          <h2>Temperature:</h2>
+          <h2>Wind Speed:</h2>
+          <h2>Humidity:</h2>
         </div>
-        <div id=fifth-day>
-            <h2>Temperature: </h2>
-            <h2>Wind Speed: </h2>
-            <h2>Humidity: </h2>
+        <div id="fifth-day">
+          <h2>Temperature:</h2>
+          <h2>Wind Speed:</h2>
+          <h2>Humidity:</h2>
         </div>
       </div>
     </main>
