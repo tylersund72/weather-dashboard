@@ -19,58 +19,74 @@
     </header>
 
     <main>
-      <div class="container-fluid">
-        <div class="search">
-          <input type="text" class="search-bar" />
-          <button></button>
-        </div>
-        <!-- display current weather -->
-        <div class="col">
+      <!-- display current weather -->
+      <section id="hero">
+        <section id="city-search">
           <div class="weather">
             <h2 class="city">Search for a City:</h2>
-            <h2 class="temp">Temperature:</h2>
-            <img src="" alt="" class="icon" />
-            <h2 class="description"></h2>
-            <h2 class="wind">Wind Speed:</h2>
-            <h2 class="humidity">Humidity</h2>
-            <h2 class="uv">UV Index:</h2>
           </div>
-        </div>
-      </div>
+          <div class="search">
+            <input
+              placeholder="Salt Lake City"
+              type="text"
+              class="search-bar"
+            />
+            <div id="btn-container">
+              <button>Search</button>
+            </div>
+          </div>
+          <div id="search-history"></div>
+        </section>
 
-      <!-- 5 days of weather -->
-      <div>
-        <div id="first-day">
-          <h2 id="day-1-date"></h2>
-          <h2 id="day-1-temp">Temperature:</h2>
-          <h2 id="day-1-wind">Wind Speed:</h2>
-          <h2 id="day-1-hum">Humidity:</h2>
-        </div>
-        <div id="second-day">
-          <h2 id="day-2-date"></h2>
-          <h2 id="day-2-temp">Temperature:</h2>
-          <h2 id="day-2-wind">Wind Speed:</h2>
-          <h2 id="day-2-hum">Humidity:</h2>
-        </div>
-        <div id="third-day">
-          <h2 id="day-3-date"></h2>
-          <h2 id="day-3-temp">Temperature:</h2>
-          <h2 id="day-3-wind">Wind Speed:</h2>
-          <h2 id="day-3-hum">Humidity:</h2>
-        </div>
-        <div id="fourth-day">
-          <h2 id="day-4-date"></h2>
-          <h2 id="day-4-temp">Temperature:</h2>
-          <h2 id="day-4-wind">Wind Speed:</h2>
-          <h2 id="day-4-hum">Humidity:</h2>
-        </div>
-        <div id="fifth-day">
-          <h2 id="day-5-date"></h2>
-          <h2 id="day-5-temp">Temperature:</h2>
-          <h2 id="day-5-wind">Wind Speed:</h2>
-          <h2 id="day-5-hum">Humidity:</h2>
-        </div>
-      </div>
+        <section id="search-results">
+          <section id="current-weather-wrapper">
+            <div id="current-weather-data">
+              <p class="temp">Temperature:</p>
+              <img src="" alt="" class="icon" />
+              <p class="description"></p>
+              <p class="wind">Wind Speed:</p>
+              <p class="humidity">Humidity</p>
+              <p class="uv">UV Index:</p>
+            </div>
+          </section>
+        </section>
+
+        <!-- 5 days of weather -->
+        <section id="5-day-forecast">
+          <section id="inner-5-day-forecast">
+            <div id="first-day">
+              <h2 id="day-1-date"></h2>
+              <h2 id="day-1-temp">Temperature:</h2>
+              <h2 id="day-1-wind">Wind Speed:</h2>
+              <h2 id="day-1-hum">Humidity:</h2>
+            </div>
+            <div id="second-day">
+              <h2 id="day-2-date"></h2>
+              <h2 id="day-2-temp">Temperature:</h2>
+              <h2 id="day-2-wind">Wind Speed:</h2>
+              <h2 id="day-2-hum">Humidity:</h2>
+            </div>
+            <div id="third-day">
+              <h2 id="day-3-date"></h2>
+              <h2 id="day-3-temp">Temperature:</h2>
+              <h2 id="day-3-wind">Wind Speed:</h2>
+              <h2 id="day-3-hum">Humidity:</h2>
+            </div>
+            <div id="fourth-day">
+              <h2 id="day-4-date"></h2>
+              <h2 id="day-4-temp">Temperature:</h2>
+              <h2 id="day-4-wind">Wind Speed:</h2>
+              <h2 id="day-4-hum">Humidity:</h2>
+            </div>
+            <div id="fifth-day">
+              <h2 id="day-5-date"></h2>
+              <h2 id="day-5-temp">Temperature:</h2>
+              <h2 id="day-5-wind">Wind Speed:</h2>
+              <h2 id="day-5-hum">Humidity:</h2>
+            </div>
+          </section>
+        </section>
+      </section>
     </main>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
