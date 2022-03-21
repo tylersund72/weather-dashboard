@@ -14,35 +14,27 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <header>Weather Dashboard</header>
+    <header>
+      <h1>Weather Dashboard</h1>
+    </header>
 
     <main>
-      <div class="container-fluid">
-        <div class="row align-items-start">
-          <div class="col-md-3">
-            <form>
-              <div id="city-search">
-                <label for="city">City Search</label>
-                <input
-                  class="search-bar"
-                  id="form-input"
-                  type="text"
-                  placeholder="City"
-                />
-                <button type="submit" id="search-btn"></button>
-              </div>
-            </form>
-          </div>
+      <div class="container">
+        <div class="search">
+          <input type="text" class="search-bar" />
+          <button></button>
         </div>
-      </div>
-      <!-- display current weather -->
-      <div class="col">
-        <div class="weather">
-          <h2 class="city">City You Searched</h2>
-          <h2 class="temp">Temperature:</h2>
-          <h2 class="wind">Wind Speed:</h2>
-          <h2 class="humidity">Humidity</h2>
-          <h2 class="uv">UV Index:</h2>
+        <!-- display current weather -->
+        <div class="col">
+          <div class="weather">
+            <h2 class="city">Search for a City:</h2>
+            <h2 class="temp">Temperature:</h2>
+            <img src="" alt="" class="icon" />
+            <h2 class="description"></h2>
+            <h2 class="wind">Wind Speed:</h2>
+            <h2 class="humidity">Humidity</h2>
+            <h2 class="uv">UV Index:</h2>
+          </div>
         </div>
       </div>
 
