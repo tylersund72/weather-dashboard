@@ -21,8 +21,8 @@
         <div class="row align-items-start">
           <div class="col-md-3">
             <form>
-              <div class="form-input">
-                <label for="city">Search a City</label>
+              <div class="form-input" id="city-search">
+                <label for="city">City Search</label>
                 <input type="text" placeholder="City" />
                 <button type="submit" id="search-btn"></button>
               </div>
@@ -32,12 +32,42 @@
       </div>
       <!-- display current weather -->
       <div class="col">
-        <div class="row"></div>
+        <div>
+            <h2>City You Searched</h2>
+            <h2>Temperature: </h2>
+            <h2>Wind Speed: </h2>
+            <h2>Humidity</h2>
+            <h2>UV Index: </h2>
+        </div>
       </div>
 
       <!-- 5 days of weather -->
-      <div class="row">
-        <div class="col"></div>
+      <div>
+        <div id=first-day>
+            <h2>Temperature: </h2>
+            <h2>Wind Speed: </h2>
+            <h2>Humidity: </h2>
+        </div>
+        <div id=second-day>
+            <h2>Temperature: </h2>
+            <h2>Wind Speed: </h2>
+            <h2>Humidity: </h2>
+        </div>
+        <div id=third-day>
+            <h2>Temperature: </h2>
+            <h2>Wind Speed: </h2>
+            <h2>Humidity: </h2>
+        </div>
+        <div id=fourth-day>
+            <h2>Temperature: </h2>
+            <h2>Wind Speed: </h2>
+            <h2>Humidity: </h2>
+        </div>
+        <div id=fifth-day>
+            <h2>Temperature: </h2>
+            <h2>Wind Speed: </h2>
+            <h2>Humidity: </h2>
+        </div>
       </div>
     </main>
 
