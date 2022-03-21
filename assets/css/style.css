@@ -1,4 +1,11 @@
 header {
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+    align-items: center;
+    background-color: #375EB1;
+    color: #FFFFFF;
+    height: 75px;
 }
 
 #search-btn {
